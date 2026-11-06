@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="موسى للمعلومات — نتعلم، نكتشف، ونشارك المعرفة. دروس الحاسوب والبرمجة والذكاء الاصطناعي وأدوات رقمية مفيدة.">
+  <meta name="theme-color" content="#071426">
+  <title>موسى للمعلومات | نتعلم، نكتشف، ونشارك المعرفة</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#" aria-label="موسى للمعلومات - الرئيسية">
+        <span class="brand-mark">م</span>
+        <span><strong>موسى للمعلومات</strong><small>MOUSSA INFO</small></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة" aria-expanded="false">☰</button>
+      <nav id="mainNav">
+        <a href="#home">الرئيسية</a><a href="#categories">الأقسام</a><a href="#articles">أحدث المقالات</a><a href="#about">من نحن</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">بوابتك إلى العالم الرقمي</span>
+          <h1>نتعلم، نكتشف،<br><span>ونشارك المعرفة.</span></h1>
+          <p>معلومات تقنية مبسطة، شروحات عملية، وأدوات رقمية تساعدك على اكتشاف التكنولوجيا والاستفادة منها.</p>
+          <div class="hero-actions"><a class="btn primary" href="#articles">اكتشف المقالات <span>←</span></a><a class="btn secondary" href="#categories">تصفح الأقسام</a></div>
+        </div>
+        <div class="hero-art" aria-label="رسم توضيحي للتكنولوجيا">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="tech-card main-chip"><span>⌘</span><b>TECHNOLOGY</b><small>Learn something new</small></div>
+          <div class="float-icon icon-ai">AI</div><div class="float-icon icon-code">&lt;/&gt;</div><div class="float-icon icon-wifi">◉</div>
+          <div class="hero-glow"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container quick-strip">
+      <div><span>01</span><b>تعلم بسهولة</b><small>شروحات خطوة بخطوة</small></div>
+      <div><span>02</span><b>اكتشف الجديد</b><small>أدوات وتقنيات حديثة</small></div>
+      <div><span>03</span><b>طور مهاراتك</b><small>معرفة رقمية للجميع</small></div>
+    </section>
+
+    <section class="section container" id="categories">
+      <div class="section-heading"><div><span class="eyebrow">استكشف المعرفة</span><h2>أقسام الموقع</h2></div><p>اختر المجال الذي تريد اكتشافه.</p></div>
+      <div class="category-grid">
+        <a class="category-card" href="#articles" data-filter="windows"><span class="cat-icon">💻</span><b>الحاسوب وWindows</b><small>حلول وشروحات للمبتدئين</small></a>
+        <a class="category-card" href="#articles" data-filter="ai"><span class="cat-icon">🤖</span><b>الذكاء الاصطناعي</b><small>أدوات واستخدامات مفيدة</small></a>
+        <a class="category-card" href="#articles" data-filter="web"><span class="cat-icon">🌐</span><b>الإنترنت والمواقع</b><small>مواقع وخدمات رقمية</small></a>
+        <a class="category-card" href="#articles" data-filter="mobile"><span class="cat-icon">📱</span><b>الهاتف والتطبيقات</b><small>تطبيقات ونصائح عملية</small></a>
+        <a class="category-card" href="#articles" data-filter="code"><span class="cat-icon">👨‍💻</span><b>تعلم البرمجة</b><small>من الصفر وبطريقة مبسطة</small></a>
+        <a class="category-card" href="#articles" data-filter="security"><span class="cat-icon">🔐</span><b>الأمن الرقمي</b><small>حماية الحسابات والأجهزة</small></a>
+      </div>
+    </section>
+
+    <section class="section latest-section" id="articles">
+      <div class="container">
+        <div class="section-heading"><div><span class="eyebrow">محتوى مفيد ومتجدد</span><h2>أحدث المقالات</h2></div><p>نماذج أولية يمكنك استبدالها بمقالاتك.</p></div>
+        <div class="toolbar">
+          <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="ابحث عن موضوع..." aria-label="ابحث عن مقال"></label>
+          <div class="filter-list" id="filters">
+            <button class="filter active" data-filter="all">الكل</button><button class="filter" data-filter="windows">Windows</button><button class="filter" data-filter="ai">الذكاء الاصطناعي</button><button class="filter" data-filter="code">البرمجة</button><button class="filter" data-filter="web">مواقع مفيدة</button>
+          </div>
+        </div>
+        <div class="article-grid" id="articleGrid">
+          <article class="article-card" data-category="windows"><div class="article-visual visual-windows"><span>⚙</span><small>WINDOWS TIPS</small></div><div class="article-body"><span class="tag">الحاسوب وWindows</span><h3>كيف تفحص ملفات Windows وتصلح أخطاء النظام؟</h3><p>تعرف على أدوات مدمجة في ويندوز تساعدك على فحص ملفات النظام.</p><a href="#contact">اقرأ المزيد <span>←</span></a></div></article>
+          <article class="article-card" data-category="ai"><div class="article-visual visual-ai"><span>✦</span><small>ARTIFICIAL INTELLIGENCE</small></div><div class="article-body"><span class="tag">الذكاء الاصطناعي</span><h3>كيف تستفيد من الذكاء الاصطناعي في حياتك اليومية؟</h3><p>أفكار بسيطة لاستخدام أدوات الذكاء الاصطناعي في التعلم والعمل.</p><a href="#contact">اقرأ المزيد <span>←</span></a></div></article>
+          <article class="article-card" data-category="code"><div class="article-visual visual-code"><span>&lt;/&gt;</span><small>START CODING</small></div><div class="article-body"><span class="tag">تعلم البرمجة</span><h3>تعلم البرمجة من الهاتف: من أين تبدأ؟</h3><p>خطوات أولى لفهم البرمجة وتجربة كتابة أول كود بطريقة سهلة.</p><a href="#contact">اقرأ المزيد <span>←</span></a></div></article>
+          <article class="article-card" data-category="web"><div class="article-visual visual-web"><span>◎</span><small>USEFUL WEBSITES</small></div><div class="article-body"><span class="tag">الإنترنت والمواقع</span><h3>مواقع مفيدة لتحويل الملفات والصيغ المختلفة</h3><p>اكتشف خدمات عبر الإنترنت لتحويل الصور والملفات والصوت.</p><a href="#contact">اقرأ المزيد <span>←</span></a></div></article>
+          <article class="article-card" data-category="mobile"><div class="article-visual visual-mobile"><span>▣</span><small>MOBILE APPS</small></div><div class="article-body"><span class="tag">الهاتف والتطبيقات</span><h3>نصائح لتنظيم هاتفك والاستفادة من تطبيقاته</h3><p>طرق عملية لترتيب التطبيقات والملفات وتحسين تجربتك اليومية.</p><a href="#contact">اقرأ المزيد <span>←</span></a></div></article>
+          <article class="article-card" data-category="security"><div class="article-visual visual-security"><span>⬡</span><small>CYBER SAFETY</small></div><div class="article-body"><span class="tag">الأمن الرقمي</span><h3>خطوات أساسية لحماية حساباتك على الإنترنت</h3><p>تعرف على كلمات المرور القوية والتحقق بخطوتين والانتباه للروابط.</p><a href="#contact">اقرأ المزيد <span>←</span></a></div></article>
+        </div>
+        <p class="empty-state" id="emptyState" hidden>لم نعثر على مقالات مطابقة. جرّب كلمة أخرى.</p>
+      </div>
+    </section>
+
+    <section class="about-section section" id="about"><div class="container about-box"><div class="about-symbol">م<span>.</span></div><div><span class="eyebrow">من نحن</span><h2>المعرفة للجميع</h2><p>موسى للمعلومات مساحة رقمية لمشاركة المعرفة التقنية وتبسيط المعلومة، من أساسيات الحاسوب إلى أدوات الذكاء الاصطناعي والبرمجة.</p><strong>نتعلم، نكتشف، ونشارك المعرفة.</strong></div></div></section>
+    <section class="section container contact-section" id="contact"><span class="eyebrow">ابقَ على اطلاع</span><h2>تابع جديد موسى للمعلومات</h2><p>تابع صفحاتنا على شبكات التواصل لاكتشاف الشروحات والمنشورات الجديدة.</p><a class="btn primary" href="https://www.facebook.com/" target="_blank" rel="noopener">تابعنا على Facebook</a><small class="note">يمكنك لاحقاً استبدال الرابط برابط صفحتك الرسمية.</small></section>
+  </main>
+  <footer><div class="container footer-inner"><a class="brand" href="#"><span class="brand-mark">م</span><span><strong>موسى للمعلومات</strong><small>MOUSSA INFO</small></span></a><p>© <span id="year"></span> موسى للمعلومات. جميع الحقوق محفوظة.</p><a href="#home">العودة إلى الأعلى ↑</a></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
